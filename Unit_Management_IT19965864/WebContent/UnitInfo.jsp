@@ -30,7 +30,7 @@
 				
 					<h2 class="text-center mt-3 mb-3">Unit Details Management </h2>
 					
-					<form id="formInquiry" name="formInquiry" class="px-4">
+					<form id="formUnit" name="formUnit" class="px-4">
 					
 						Date: 
 						<input id="date" name="date" type="date" class="form-control form-control-sm mb-2"> 
