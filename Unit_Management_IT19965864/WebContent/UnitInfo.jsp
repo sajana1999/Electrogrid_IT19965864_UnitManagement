@@ -34,10 +34,10 @@
 					<form id="formUnit" name="formUnit" class="px-4">
 					
 						Date: 
-						<input id="date" name="date" type="date" class="form-control form-control-sm mb-2"> 
+						<input id="date" name="date" type="text" class="form-control form-control-sm mb-2"> 
 						
 						Valid Month:
-						<select id="unitType" name="unitType" type="text" class="form-control form-control-sm mb-2">
+						<select id="unitMonth" name="unitMonth" type="text" class="form-control form-control-sm mb-2">
 							<option selected value="" >Please select</option>
 							<option value="January">January</option>
 							<option value="February">February</option>
@@ -56,7 +56,7 @@
 						 
 											      
 						Unit Range: 					 
-						<select id="unitType" name="unitType" type="number" class="form-control form-control-sm mb-2">
+						<select id="unitRange" name="unitRange" type="text" class="form-control form-control-sm mb-2">
 							<option selected value="" >Please select</option>
 							<option value="a">0-60</option>
 							<option value="b">61-90</option>
@@ -88,7 +88,7 @@
 								</div>							    
 							  </div>
 							</div>		 
-						<input type="hidden" id="hidInquiryIDSave" name="hidInquiryIDSave" value="">
+						<input type="hidden" id="hideUnitDSave" name="hideUnitDSave" value="">
 					
 					</form>
 					
@@ -97,7 +97,7 @@
 					
 					
 				</div>
-				<div id="divInquirysGrid" class="shadow-lg px-3 pt-3 mb-5 bg-white rounded offset-md-1" >
+				<div id="divUnitsGrid" class="shadow-lg px-3 pt-3 mb-5 bg-white rounded offset-md-1" >
 						<%
 							UnitInformation unitobj = new UnitInformation();
 							out.print(unitobj.readUnits());
