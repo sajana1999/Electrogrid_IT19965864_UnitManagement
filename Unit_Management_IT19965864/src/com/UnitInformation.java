@@ -22,7 +22,7 @@ public class UnitInformation {
 		return con;
 	}
 	//insert Units details
-	public String insertUnits(String date, String validMonth, String unitRange, int unitprice) {
+	public String insertUnits(String date, String validMonth, String unitRange, String unitprice) {
 		String output = "";
 		try {
 			Connection con = connect();
@@ -42,7 +42,7 @@ public class UnitInformation {
 			preparedStmt.setString(1, date);
 			preparedStmt.setString(2, validMonth);
 			preparedStmt.setString(3, unitRange);
-			preparedStmt.setInt(4, unitprice);
+			preparedStmt.setString(4, unitprice);
 			
 
 			// execute the statement
