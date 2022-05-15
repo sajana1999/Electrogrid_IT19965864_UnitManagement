@@ -132,23 +132,23 @@ function validateUnitForm()
 	// user name
 	if ($("#date").val().trim() == "")
 	{
-	return "Insert User Name.";
+	return "Insert Date.";
 	}
 	// address
 	if ($("#unitMonth").val().trim() == "")
 	{
-	return "Insert User Address.";
+	return "Insert Month.";
 	
     }
 	// no of unit
 	if ($("#unitRange").val().trim() == "")
 	{
-	return "Insert No of Units.";
+	return "Insert units range.";
 	}
 	// month
 	if ($("#price").val().trim() == "")
 	{
-	return "Insert Month.";
+	return "Insert unit price.";
 	
     }
 
