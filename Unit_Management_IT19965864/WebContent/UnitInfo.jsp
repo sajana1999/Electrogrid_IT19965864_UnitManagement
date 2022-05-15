@@ -1,3 +1,4 @@
+<%@page import="com.UnitInformation"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -97,7 +98,10 @@
 					
 				</div>
 				<div id="divInquirysGrid" class="shadow-lg px-3 pt-3 mb-5 bg-white rounded offset-md-1" >
-						
+						<%
+							UnitInformation unitobj = new UnitInformation();
+							out.print(unitobj.readUnits());
+						%>
 				</div>
 				
 			</div>
