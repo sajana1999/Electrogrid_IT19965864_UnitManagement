@@ -48,8 +48,10 @@ public class UnitInformation {
 			// execute the statement
 			preparedStmt.execute();
 			con.close();
-
-			output = "Inserted successfully";
+				
+			String newUnit= readUnits(); 
+			output = "{\"status\":\"success\",\"data\":\""+newUnit+"\"}"; 
+			
 		} catch (Exception e) {
 			output = "Error while inserting the Units details.";
 			System.err.println(e.getMessage());
